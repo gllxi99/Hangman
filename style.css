@@ -1,0 +1,154 @@
+body {
+  font-family: "Roboto";
+  background-image: linear-gradient(120deg, #64cf8c 0%, #59afdb 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.game-container {
+  display: flex;
+  align-items: center;
+  background-color: rgba(49, 149, 230, 0.9); /* Light blue */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  justify-content: flex-start;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 4rem;
+}
+
+canvas {
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.word-container {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.info-container p {
+  margin: 0.5rem;
+  color: #333;
+}
+
+#letter-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+#letter-input:focus {
+  border-color: #84fab0;
+  box-shadow: 0 0 5px rgba(132, 250, 176, 0.5);
+}
+
+#submit-letter {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#submit-letter:hover {
+  background-color: #45a049;
+}
+
+#submit-letter:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
+
+#new-word {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+#new-word:hover {
+  background-color: #45a049;
+}
+
+#new-word:active {
+  background-color: #3e8e41;
+  transform: scale(0.95);
+}
+
+.lives-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.life-icon {
+  font-size: 24px;
+  color: red;
+  margin-right: 5px;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

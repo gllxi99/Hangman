@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3f"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hangman Game</h1>
+    </header>
+    <section class="game-container">
+      <canvas id="hangman" width="400" height="400"></canvas>
+      <div class="right-side">
+        <div id="lives-container"></div>
+        <div class="word-container">
+          <p id="word"></p>
+        </div>
+        <div class="input-container">
+          <input type="text" id="letter-input" maxlength="1" autofocus />
+        </div>
+        <div class="info-container">
+          <p id="remaining-guesses"></p>
+          <p id="used-letters"></p>
+          <p id="game-status"></p>
+        </div>
+        <button id="new-word">New Word</button>
+      </div>
+    </section>
+    <script src="hangman.js"></script>
+  </body>
+</html>
